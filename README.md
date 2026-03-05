@@ -1,2 +1,2 @@
-# testfromhuskydevapi
-enough
+/status - check status
+/info - get info

@@ -31,7 +31,7 @@ func info(w http.ResponseWriter, r *http.Request) {
 	client := &http.Client{Timeout: 10 * time.Second}
 	resp, err := client.Get(url)
 	if err != nil {
-		http.Error(w, "Oshibochka providera", 500)
+		http.Error(w, "Oshibochka providera / error from provaider", 500)
 		return
 	}
 	defer resp.Body.Close()
